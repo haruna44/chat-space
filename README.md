@@ -30,7 +30,7 @@ Things you may want to cover:
 ## groupテーブル
 |Colum|Type|Option|
 |-----|----|------|
-|name|text|null:false|
+|name|text|null:false,unique:true|
 
 ### Asscoiation
 - has_many :users through: :group_users
