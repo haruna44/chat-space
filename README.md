@@ -17,33 +17,34 @@ Things you may want to cover:
 
 |Colum|Type|Option|
 |-----|----|------|
-|name|string|primary_key:true|
-|email|integer|primary_key:true
-|password|integer|primary_key:true|
+|name|string|null: false,index: true|
+|email|integer|null: false|
+|password|integer|null: false|
 
 ### Association
-- has_many : groups
+- has_many :groups
+- has_many : groups through:  :groups_users
 - has_many :posts
 
 
 ## groupテーブル
 |Colum|Type|Option|
 |-----|----|------|
-|name|text|primary_key:true|
-|user_id|integer|null:false,foorein_key: true|
+|name|text|null:false|
 
 ### Asscoiation
-- belongs_to :user
+- has_many :users through: :group_users
+- has-many: group_users
 - has_many :posts
 
 
 ## postsテーブル
 |Colum|Type|Option|
 |-----|----|------|
-|text|text|null| |
+|text|text|| 
 |image|text||
-|user_id|integer|null:false,foreign_key: true |
-|group_id|integer|null:false,foreign_key: true |
+|user|reference|null:false,foreign_key: true |
+|group|reference|null:false,foreign_key: true |
 
 ### Association
 -belongs_to :user
@@ -54,8 +55,8 @@ Things you may want to cover:
 
 |Column|Type|Options|
 |------|----|-------|
-|user_id|integer|null: false, foreign_key: true|
-|group_id|integer|null: false, foreign_key: true|
+|user|reference|null: false, foreign_key: true|
+|group|reference|null: false, foreign_key: true|
 
 ### Association
 - belongs_to :group
