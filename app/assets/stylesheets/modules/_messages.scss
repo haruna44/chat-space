@@ -11,8 +11,6 @@ $chat_text_color:#333333;
 
   .side{
     width:300px;
-    // box-sizing: border-box;
-    
     &__upside {
       height :100px;
       width: 300px;
@@ -26,7 +24,6 @@ $chat_text_color:#333333;
         height: 20px;
         width: 260px;
         // background-color: #d8d8d8;
-        // line-height:100px
         display: flex;
         justify-content: space-between;
         
@@ -206,7 +203,7 @@ $chat_text_color:#333333;
         height: 14px;
         // background-color: #cc99ff;
         line-height: 1;
-        color: #chat_text_color;
+        color: #434a54;
         font-size: 14px;
         font-weight: bold;
         margin-left: 40px; 
@@ -246,6 +243,7 @@ $chat_text_color:#333333;
         font-weight: bold;
         margin-left: 40px; 
         font-size: 14px;
+        color: #434a54;
       }
     }
 
