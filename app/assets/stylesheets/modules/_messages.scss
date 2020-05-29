@@ -1,0 +1,292 @@
+$side_font_color: #ffffff;
+
+$chat_text_color:#333333;
+* {
+  box-sizing: border-box;
+}
+
+.wrapper{
+  display: flex;
+
+
+  .side{
+    width:300px;
+    &__upside {
+      height :100px;
+      width: 300px;
+      background-color: #253141;
+      display:flex;
+      align-items: center;
+      justify-content: center;
+      box-sizing: border-box;
+
+      &__box{
+        height: 20px;
+        width: 260px;
+        // background-color: #d8d8d8;
+        display: flex;
+        justify-content: space-between;
+        
+        &__username{
+          color: $side_font_color;
+          font-size: 16px;
+          width: 120px;
+          height: 20px;
+          font-weight: bold;
+        }
+        
+        &__icon{
+          height: 20px;
+          width: 60px;
+          // background-color:green;
+          display: flex;
+          justify-content: flex-end; 
+          align-items: center;
+          // margin-right: 20px;
+            .cog{
+              color:$side_font_color;
+              list-style: none;
+            }
+            .edit{
+              margin: 5px;
+              color:$side_font_color;
+              list-style: none;
+            }
+        }
+      }
+    }
+
+    &__main{
+    height : calc(100vh - 100px);
+    width : 300px;
+    background-color:#2f3e51 ;
+    box-sizing: border-box;
+
+      &__blank1{
+        width: 260px;
+        height: 20px;
+        // background-color: white;
+        margin-left: 20px;
+      }
+      &__group-name{
+        width: 260px;
+        height: 15px;
+        // background-color: #cc99ff;
+        font-size: 15px;
+        color: $side_font_color;
+        font-weight: bold;
+        margin-left: 20px;
+        line-height: 1;
+      }
+      &__blank2{
+        width: 260px;
+        height: 5px;
+        // background-color: white;
+        margin-left: 20px;
+      }
+      &__message-info{
+      width: 260px;
+      height: 11px;
+      // background-color: #cc99ff; 
+      font-size: 11px;
+      margin-left: 20px;
+      line-height: 1;
+      color: $side_font_color;
+      font-weight: bold;
+      }
+      &__blank3{
+        width: 260px;
+        height: 40px;
+        // background-color: white;
+        margin-left: 20px;
+      }
+
+
+    }
+
+  }
+
+
+  
+  .chat{
+    width: calc(100vw - 300px);
+    
+    &__group-info{
+      display: flex;
+      justify-content: space-between;
+      position: relative;
+      background-color: $side_font_color;
+      
+
+      &__left{
+        height: 100px;
+        // background-color: #25ca33;
+        margin-left: 40px; 
+      
+        &__blank1{
+          width: 260px;
+          height: 35px;
+          // background-color: white;
+          }
+        &__group-name{
+          width: 260px;
+          height: 20px;
+          // background-color: #cc99ff;
+          font-size: 20px;
+          color: chat_text_color;
+          font-weight: bold;
+          line-height: 1;
+          }
+        &__blank2{
+          width: 260px;
+          height: 15px;
+          // background-color: white;
+        }
+        &__user-name{
+          width: 260px;
+          height: 12px;
+          // background-color: #cc99ff;
+          font-size: 12px;
+          color: #999999;
+          font-weight: bold;
+          line-height: 1;
+        }
+
+      }
+      &__right{
+        .edit-btn{
+          color: #38aef0;
+          border: solid 1px ;
+          padding: 12px 20px;
+          text-decoration: none;
+          position: absolute;
+          top: 28px;
+          right: 40px;
+        }
+      }
+    }
+
+    &__main{
+      height: calc(100vh - 190px);
+      background-color: #fafafa;
+      
+      &__blank1{
+        width: auto;
+        height: 35px;
+        // background-color: #ffc7af;
+      }
+      &__user-name1{
+        width: auto;
+        height: 16px;
+        // background-color: #cc99ff;
+        line-height: 1;
+          .user-name{
+            font-size: 16px;
+            color: chat_text_color;
+            font-weight: bold;
+            margin-left: 40px; 
+          }
+          .date{
+            font-size: 12px;
+            color: #999999;
+            font-weight: bold;
+            
+          }
+      }
+      &__blank2{
+        width: auto;
+        height: 12px;
+        // background-color: #ffc7af;
+      }
+      &__chat-message1{
+        width: auto;
+        height: 14px;
+        // background-color: #cc99ff;
+        line-height: 1;
+        color: #434a54;
+        font-size: 14px;
+        font-weight: bold;
+        margin-left: 40px; 
+      }
+      &__blank3{
+        width: auto;
+        height: 46px;
+        // background-color: #ffc7af;
+      }
+      &__user-name2{
+        width: auto;
+        height: 16px;
+        // background-color: #cc99ff;
+        line-height: 1;
+        .user-name{
+          font-size: 16px;
+          color: chat_text_color;
+          font-weight: bold;
+          margin-left: 40px; 
+        }
+        .date{
+          font-size: 12px;
+          color: #999999;
+          font-weight: bold;
+        }
+      }
+      &__blank4{
+        width: auto;
+        height: 12px;
+        // background-color: #ffc7af;
+      }
+      &__chat-message2{
+        width: auto;
+        height: 16px;
+        // background-color: #cc99ff;
+        line-height: 1;
+        font-weight: bold;
+        margin-left: 40px; 
+        font-size: 14px;
+        color: #434a54;
+      }
+    }
+
+    &__form{
+      height: 90px;
+      background-color: #d2d2d2;
+      padding: 20px 40px;
+      display: flex;
+      
+      form{
+        width: 100%;
+        display: flex;
+        .input-box{
+          display: flex;
+          width: 100%;
+          position: relative;
+          &__text{
+            height: 50px;
+            width: 100%;
+            color:#434a54;
+            border-style: none;
+            padding: 0 40px 0 10px;
+          }
+          &__image{
+            position: absolute;
+            top: 10px;
+            right: 10px;
+          
+            &__file{
+              display: none;
+            }
+          }  
+        }  
+      }
+      .submit-btn{
+        width: 100px;
+        height: 50px;
+        background-color: #38aef0;
+        color: white;
+        padding: 0 30px;
+        margin-left: 15px;
+
+      }
+    }
+  }
+}
