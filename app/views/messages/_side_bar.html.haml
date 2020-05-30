@@ -2,13 +2,13 @@
   .side__upside
     .side__upside__box 
       .side__upside__box__username
-        masa
+        = current_user.name
       %ul.side__upside__box__icon
         %li.edit
           = link_to"#",class:"edit" do
             = icon("far", "edit")
-        %li.cog   
-          = link_to"#" ,class:"cog" do
+        %li.cog
+          = link_to edit_user_path(current_user) ,class:"cog" do
             = icon("fas","cog")
   %ul.side__main
     %li.side__main__blank1
