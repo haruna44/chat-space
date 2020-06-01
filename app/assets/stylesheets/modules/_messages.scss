@@ -5,6 +5,10 @@ $chat_text_color:#333333;
   box-sizing: border-box;
 }
 
+a{
+  text-decoration: none;
+}
+
 .wrapper{
   display: flex;
 
@@ -64,43 +68,35 @@ $chat_text_color:#333333;
 
       &__blank1{
         width: 260px;
-        height: 20px;
+        // height: 20px;
         // background-color: white;
         margin-left: 20px;
-      }
-      &__group-name{
+        margin-bottom: 40px;
+      
+        &__group-name{
+          width: 260px;
+          // background-color: #cc99ff;
+          font-size: 15px;
+          color: $side_font_color;
+          font-weight: bold;
+          margin-left: 20px;
+          line-height: 1;
+          padding-top: 20px;
+          text-decoration:none;
+        }
+
+        
+        &__message-info{
         width: 260px;
-        height: 15px;
-        // background-color: #cc99ff;
-        font-size: 15px;
-        color: $side_font_color;
-        font-weight: bold;
+        // background-color: #cc99ff; 
+        font-size: 11px;
         margin-left: 20px;
         line-height: 1;
+        color: $side_font_color;
+        font-weight: bold;
+        margin-top: 5px;
+        }
       }
-      &__blank2{
-        width: 260px;
-        height: 5px;
-        // background-color: white;
-        margin-left: 20px;
-      }
-      &__message-info{
-      width: 260px;
-      height: 11px;
-      // background-color: #cc99ff; 
-      font-size: 11px;
-      margin-left: 20px;
-      line-height: 1;
-      color: $side_font_color;
-      font-weight: bold;
-      }
-      &__blank3{
-        width: 260px;
-        height: 40px;
-        // background-color: white;
-        margin-left: 20px;
-      }
-
 
     }
 
