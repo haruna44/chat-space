@@ -9,8 +9,13 @@ a{
   text-decoration: none;
 }
 
+// html, body{
+//   overflow: hidden;
+// }
+
 .wrapper{
   display: flex;
+  
 
 
   .side{
@@ -146,6 +151,7 @@ a{
           color: #999999;
           font-weight: bold;
           line-height: 1;
+          display: flex;
         }
 
       }
@@ -163,84 +169,88 @@ a{
     }
 
     &__main{
-      height: calc(100vh - 190px);
+      height: calc(100% - 190px);
       background-color: #fafafa;
-      
-      &__blank1{
-        width: auto;
-        height: 35px;
-        // background-color: #ffc7af;
-      }
-      &__user-name1{
-        width: auto;
-        height: 16px;
-        // background-color: #cc99ff;
-        line-height: 1;
-          .user-name{
-            font-size: 16px;
-            color: chat_text_color;
-            font-weight: bold;
-            margin-left: 40px; 
-          }
-          .date{
-            font-size: 12px;
-            color: #999999;
-            font-weight: bold;
-            
-          }
-      }
-      &__blank2{
-        width: auto;
-        height: 12px;
-        // background-color: #ffc7af;
-      }
-      &__chat-message1{
-        width: auto;
-        height: 14px;
-        // background-color: #cc99ff;
-        line-height: 1;
-        color: #434a54;
-        font-size: 14px;
-        font-weight: bold;
-        margin-left: 40px; 
-      }
-      &__blank3{
-        width: auto;
-        height: 46px;
-        // background-color: #ffc7af;
-      }
-      &__user-name2{
-        width: auto;
-        height: 16px;
-        // background-color: #cc99ff;
-        line-height: 1;
-        .user-name{
-          font-size: 16px;
-          color: chat_text_color;
+      &__message{
+        &__blank1{
+          width: auto;
+          height: 35px;
+          // background-color: #ffc7af;
+        }
+        &__user-info{
+          width: auto;
+          height: 16px;
+          display: flex;
+          // background-color: #cc99ff;
+          line-height: 1;
+          margin-bottom: 12px;
+            &__user-name{
+              font-size: 16px;
+              color: chat_text_color;
+              font-weight: bold;
+              margin-left: 40px; 
+            }
+            &__date{
+              font-size: 12px;
+              color: #999999;
+              font-weight: bold;
+              
+            }
+        }
+        // &__blank2{
+        //   width: auto;
+        //   height: 12px;
+        //   // background-color: #ffc7af;
+        // }
+        &__chat-message{
+          width: auto;
+          height: 14px;
+          // background-color: #cc99ff;
+          line-height: 1;
+          color: #434a54;
+          font-size: 14px;
           font-weight: bold;
           margin-left: 40px; 
-        }
-        .date{
-          font-size: 12px;
-          color: #999999;
-          font-weight: bold;
+          margin-bottom: 40px;
         }
       }
-      &__blank4{
-        width: auto;
-        height: 12px;
-        // background-color: #ffc7af;
-      }
-      &__chat-message2{
-        width: auto;
-        height: 16px;
-        // background-color: #cc99ff;
-        line-height: 1;
-        font-weight: bold;
-        margin-left: 40px; 
-        font-size: 14px;
-        color: #434a54;
-      }
+      // &__blank3{
+      //   width: auto;
+      //   height: 46px;
+      //   // background-color: #ffc7af;
+      // }
+      // &__user-name2{
+      //   width: auto;
+      //   height: 16px;
+      //   // background-color: #cc99ff;
+      //   line-height: 1;
+      //   .user-name{
+      //     font-size: 16px;
+      //     color: chat_text_color;
+      //     font-weight: bold;
+      //     margin-left: 40px; 
+      //   }
+      //   .date{
+      //     font-size: 12px;
+      //     color: #999999;
+      //     font-weight: bold;
+      //   }
+      // }
+      // &__blank4{
+      //   width: auto;
+      //   height: 12px;
+      //   // background-color: #ffc7af;
+      // }
+      // &__chat-message2{
+      //   width: auto;
+      //   height: 16px;
+      //   // background-color: #cc99ff;
+      //   line-height: 1;
+      //   font-weight: bold;
+      //   margin-left: 40px; 
+      //   font-size: 14px;
+      //   color: #434a54;
+      // }
     }
 
     &__form{
