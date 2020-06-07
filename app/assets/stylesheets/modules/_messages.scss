@@ -169,12 +169,15 @@ a{
     }
 
     &__main{
-      height: calc(100% - 190px);
+      height: calc(100vh - 190px);
       background-color: #fafafa;
+      overflow: scroll;
+
       &__message{
         &__blank1{
           width: auto;
           height: 35px;
+          
           // background-color: #ffc7af;
         }
         &__user-info{
