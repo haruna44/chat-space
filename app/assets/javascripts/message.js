@@ -56,7 +56,6 @@ $(function(){
       contentType: false
     })
     .done(function(data){
-      console.log(data);
       var html = buildHTML(data);
       $('.chat__main').append(html);
       $('.chat__main').animate({ scrollTop: $('.chat__main')[0].scrollHeight});
@@ -75,7 +74,6 @@ $(function(){
     var reloadMessages = function() {
       //カスタムデータ属性を利用し、ブラウザに表示されている最新メッセージのidを取得
         var last_message_id = $('.chat__main__message:last').data("message-id");
-        console.log(last_message_id)
         $.ajax({
         //ルーティングで設定した通り/groups/id番号/api/messagesとなるよう文字列を書く
         url: "api/messages",
