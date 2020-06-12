@@ -25,6 +25,8 @@ a{
       align-items: center;
       justify-content: center;
       box-sizing: border-box;
+      padding: 0 20px;
+
 
       &__box{
         height: 20px;
@@ -67,11 +69,12 @@ a{
     width : 300px;
     background-color:#2f3e51 ;
     box-sizing: border-box;
+    // padding: 20px 20px 0;
 
       &__blank1{
         width: 260px;
         // background-color: white;
-        margin-left: 20px;
+        // margin-left: 20px;
         margin-bottom: 40px;
       
         &__group-name{
@@ -168,6 +171,7 @@ a{
       height: calc(100vh - 190px);
       background-color: #fafafa;
       overflow: scroll;
+      padding: 40px 40px;
 
       &__message{
         &__blank1{
@@ -187,7 +191,7 @@ a{
               font-size: 16px;
               color: chat_text_color;
               font-weight: bold;
-              margin-left: 40px; 
+              // margin-left: 40px; 
             }
             &__date{
               font-size: 12px;
@@ -205,7 +209,7 @@ a{
           color: #434a54;
           font-size: 14px;
           font-weight: bold;
-          margin-left: 40px; 
+          // margin-left: 40px; 
           margin-bottom: 40px;
         }
       }
